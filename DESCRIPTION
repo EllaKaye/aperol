@@ -1,14 +1,16 @@
 Package: aperol
-Title: What the Package Does (One Line, Title Case)
+Title: Generates Tipsy or Drunk Praise
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Ella", "Kaye", , "ella.kaye@gmail.com", role = c("aut", "cre"))
+Description: This is a joke package, which generates praise using the praise package, then garbles it, as if being delivered by someone tipsy or drunk.
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2.9000
 URL: https://github.com/EllaKaye/aperol
 BugReports: https://github.com/EllaKaye/aperol/issues
+Imports: 
+    praise (>= 1.0.0)
+Remotes: 
+    rladies/praise
