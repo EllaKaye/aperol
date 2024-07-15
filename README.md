@@ -13,10 +13,8 @@ thread, and specifically the replies by
 <!-- badges: end -->
 
 **aperol** gives you praise, but as if from someone tipsy or drunk.
-
-Specifically, it generates some priase using the
-[praise](https://github.com/rladies/praise) package.
-
+Specifically, it generates some praise using the
+[praise](https://github.com/rladies/praise) package and garbles it.
 `aperol::tipsy()` swaps a subset of words, and `aperol::drunk()` mixes
 up the whole affirmation, repeating some words along the way.
 
@@ -35,20 +33,20 @@ remotes::install_github("EllaKaye/aperol")
 ``` r
 library(aperol)
 tipsy()
-#> [1] "are You justly rad!"
+#> [1] "You delicious! daringly are"
 ```
 
 ``` r
 tipsy(2, "${Exclamation}! ${EXCLAMATION}!-${EXCLAMATION}! This is just ${adjective}!")
-#> [1] "AHA!-MMM! is This Ho-ho! just fine!"
+#> [1] "This HAH!-MMH! solid! is just Awww!"
 ```
 
 ``` r
 drunk()
-#> [1] "You wonderful! quickly wonderful! are"
+#> [1] "are are wisely You classy!"
 ```
 
 ``` r
 drunk(2, 3, "You are ${creating} a ${adverb} ${adjective} ${rpackage}")
-#> [1] "are a inventing magnifique carefully program magnifique program program magnifique You"
+#> [1] "a cheerfully setting up You setting setting cheerfully code cheerfully are priceless"
 ```
