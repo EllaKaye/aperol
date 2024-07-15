@@ -3,6 +3,8 @@
 
 # aperol
 
+<img src=aperol_hex.png width="300">
+
 A joke package, based on
 [this](https://fosstodon.org/@kellybodwin/112769186345818866) mastodon
 thread, and specifically the replies by
