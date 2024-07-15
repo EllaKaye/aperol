@@ -24,7 +24,7 @@ You can install the development version of aperol from
 [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("devtools")
+# install.packages("remotes")
 remotes::install_github("EllaKaye/aperol")
 ```
 
@@ -33,20 +33,20 @@ remotes::install_github("EllaKaye/aperol")
 ``` r
 library(aperol)
 tipsy()
-#> [1] "You delicious! daringly are"
+#> [1] "You extraordinary! quickly are"
 ```
 
 ``` r
 tipsy(2, "${Exclamation}! ${EXCLAMATION}!-${EXCLAMATION}! This is just ${adjective}!")
-#> [1] "This HAH!-MMH! solid! is just Awww!"
+#> [1] "Yee-haw! HURRAH!-YEAHYAH! is just This fantabulosus!"
 ```
 
 ``` r
 drunk()
-#> [1] "are are wisely You classy!"
+#> [1] "You fabulous! quickly are You"
 ```
 
 ``` r
 drunk(2, 3, "You are ${creating} a ${adverb} ${adjective} ${rpackage}")
-#> [1] "a cheerfully setting up You setting setting cheerfully code cheerfully are priceless"
+#> [1] "a software are You magnificent fortunately fortunately a fortunately a making"
 ```

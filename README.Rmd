@@ -28,7 +28,7 @@ A joke package, based on [this](https://fosstodon.org/@kellybodwin/1127691863458
 You can install the development version of aperol from [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("devtools")
+# install.packages("remotes")
 remotes::install_github("EllaKaye/aperol")
 ```
 
