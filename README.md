@@ -1,9 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# aperol
-
-<img src=aperol_hex.png width="300">
+# aperol <img src="man/figures/logo.png" align="right" height="138" alt="" />
 
 A joke package, based on
 [this](https://fosstodon.org/@kellybodwin/112769186345818866) mastodon
@@ -35,20 +33,20 @@ remotes::install_github("EllaKaye/aperol")
 ``` r
 library(aperol)
 tipsy()
-#> [1] "You extraordinary! quickly are"
+#> [1] "You quickly are fantabulous!"
 ```
 
 ``` r
 tipsy(2, "${Exclamation}! ${EXCLAMATION}!-${EXCLAMATION}! This is just ${adjective}!")
-#> [1] "Yee-haw! HURRAH!-YEAHYAH! is just This fantabulosus!"
+#> [1] "AWWW!-WHOA! This Ah! is just formidable!"
 ```
 
 ``` r
 drunk()
-#> [1] "You fabulous! quickly are You"
+#> [1] "are You nice! warmly are"
 ```
 
 ``` r
 drunk(2, 3, "You are ${creating} a ${adverb} ${adjective} ${rpackage}")
-#> [1] "a software are You magnificent fortunately fortunately a fortunately a making"
+#> [1] "a are gnarly are are R building package You healthily gnarly gnarly"
 ```
