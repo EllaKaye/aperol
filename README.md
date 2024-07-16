@@ -33,20 +33,27 @@ remotes::install_github("EllaKaye/aperol")
 ``` r
 library(aperol)
 tipsy()
-#> [1] "You quickly are fantabulous!"
+#> [1] "You are exquisite! regularly"
 ```
 
 ``` r
 tipsy(2, "${Exclamation}! ${EXCLAMATION}!-${EXCLAMATION}! This is just ${adjective}!")
-#> [1] "AWWW!-WHOA! This Ah! is just formidable!"
+#> [1] "funkadelic! BOOYEAH!-WEE! Yahoo! is just This"
 ```
 
 ``` r
 drunk()
-#> [1] "are You nice! warmly are"
+#> [1] "speedily speedily You riveting! are"
 ```
 
 ``` r
 drunk(2, 3, "You are ${creating} a ${adverb} ${adjective} ${rpackage}")
-#> [1] "a are gnarly are are R building package You healthily gnarly gnarly"
+#> [1] "(or a You library package?) elegantly a are assembling (or swell (or a"
 ```
+
+## The hex
+
+The hex for the package (created by Kelly Bodwin) is so good that here
+it is in its full-sized glory
+
+![](%22aperol_hex.png%22)

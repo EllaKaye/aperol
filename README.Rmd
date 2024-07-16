@@ -42,3 +42,8 @@ drunk()
 drunk(2, 3, "You are ${creating} a ${adverb} ${adjective} ${rpackage}")
 ```
 
+## The hex
+
+The hex for the package (created by Kelly Bodwin) is so good that here it is in its full-sized glory
+
+![]("aperol_hex.png")
