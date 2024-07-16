@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 
 # aperol <img src="man/figures/logo.png" align="right" height="138" alt="" />
 
-A joke package, based on [this](https://fosstodon.org/@kellybodwin/112769186345818866) mastodon thread, and specifically the replies by [Nick](https://aus.social/@njtierney/112770398923583882) and [Ella](https://fosstodon.org/@ellakaye/112771757956362352).
+A joke package, based on [this](https://fosstodon.org/@kellybodwin/112769186345818866) mastodon thread, started by Kelly Bodwin and Shannon Pileggi, and specifically the replies by [Nick](https://aus.social/@njtierney/112770398923583882) and [Ella](https://fosstodon.org/@ellakaye/112771757956362352).
 
 
 <!-- badges: start -->

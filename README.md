@@ -5,9 +5,9 @@
 
 A joke package, based on
 [this](https://fosstodon.org/@kellybodwin/112769186345818866) mastodon
-thread, and specifically the replies by
-[Nick](https://aus.social/@njtierney/112770398923583882) and
-[Ella](https://fosstodon.org/@ellakaye/112771757956362352).
+thread, started by Kelly Bodwin and Shannon Pileggi, and specifically
+the replies by [Nick](https://aus.social/@njtierney/112770398923583882)
+and [Ella](https://fosstodon.org/@ellakaye/112771757956362352).
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -33,22 +33,22 @@ remotes::install_github("EllaKaye/aperol")
 ``` r
 library(aperol)
 tipsy()
-#> [1] "are You gladly tubular!"
+#> [1] "You cheerfully are mathematical!"
 ```
 
 ``` r
 tipsy(2, "${Exclamation}! ${EXCLAMATION}!-${EXCLAMATION}! This is just ${adjective}!")
-#> [1] "Hurrah! marvelous! This is OH!-HOOAH! just"
+#> [1] "Yahoo! impeccable! COWABUNGA!-YAHOO! is just This"
 ```
 
 ``` r
 drunk()
-#> [1] "are dope! You bigly are"
+#> [1] "are miraculous! miraculous! justly You"
 ```
 
 ``` r
 drunk(2, 3, "You are ${creating} a ${adverb} ${adjective} ${rpackage}")
-#> [1] "are assembling project You You a a rockandroll You a successfully"
+#> [1] "are unique package a R are beautifully unique You are building unique"
 ```
 
 ## The hex
