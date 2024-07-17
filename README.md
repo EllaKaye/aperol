@@ -1,15 +1,13 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# aperol
-
-<img src=aperol_hex.png width="300">
+# aperol <img src="man/figures/logo.png" align="right" height="138" alt="" />
 
 A joke package, based on
 [this](https://fosstodon.org/@kellybodwin/112769186345818866) mastodon
-thread, and specifically the replies by
-[Nick](https://aus.social/@njtierney/112770398923583882) and
-[Ella](https://fosstodon.org/@ellakaye/112771757956362352).
+thread, started by Kelly Bodwin and Shannon Pileggi, and specifically
+the replies by [Nick](https://aus.social/@njtierney/112770398923583882)
+and [Ella](https://fosstodon.org/@ellakaye/112771757956362352).
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -35,20 +33,27 @@ remotes::install_github("EllaKaye/aperol")
 ``` r
 library(aperol)
 tipsy()
-#> [1] "You extraordinary! quickly are"
+#> [1] "You cheerfully are mathematical!"
 ```
 
 ``` r
 tipsy(2, "${Exclamation}! ${EXCLAMATION}!-${EXCLAMATION}! This is just ${adjective}!")
-#> [1] "Yee-haw! HURRAH!-YEAHYAH! is just This fantabulosus!"
+#> [1] "Yahoo! impeccable! COWABUNGA!-YAHOO! is just This"
 ```
 
 ``` r
 drunk()
-#> [1] "You fabulous! quickly are You"
+#> [1] "are miraculous! miraculous! justly You"
 ```
 
 ``` r
 drunk(2, 3, "You are ${creating} a ${adverb} ${adjective} ${rpackage}")
-#> [1] "a software are You magnificent fortunately fortunately a fortunately a making"
+#> [1] "are unique package a R are beautifully unique You are building unique"
 ```
+
+## The hex
+
+The hex for the package (created by Kelly Bodwin) is so good that here
+it is in its full-sized glory.
+
+<img src=aperol_hex.png width="600">
