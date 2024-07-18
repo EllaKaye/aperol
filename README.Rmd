@@ -39,7 +39,8 @@ library(aperol)
 tipsy()
 tipsy(2, "${Exclamation}! ${EXCLAMATION}!-${EXCLAMATION}! This is just ${adjective}!")
 drunk()
-drunk(2, 3, "You are ${creating} a ${adverb} ${adjective} ${rpackage}")
+drunk(2, 2:3)
+drunk(2, 2, "You are ${creating} a ${adverb} ${adjective} ${rpackage}")
 ```
 
 ## The hex

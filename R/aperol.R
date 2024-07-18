@@ -2,7 +2,7 @@
 #' 
 #' Generates praise with [praise::praise()], then swaps some words.
 #'
-#' @param swaps int, number of word swaps to make
+#' @param swaps int scalar, number of word swaps to make
 #' @param template character scalar, template for the (non-swapped) praise
 #'
 #' @export
@@ -33,14 +33,15 @@ tipsy <- function(swaps = 1, template = "You are ${adverb} ${adjective}!") {
 #' 
 #' Generates praise with [praise::praise()], then repeats some words, and permutes them all.
 #'
-#' @param repeat_words int, number of words that get repeated
-#' @param repeat_times int, number of times to repeat the repeated words
+#' @param repeat_words int scalar, the number of words that get repeated
+#' @param repeat_times an integer-valued (non-negative) vector. If `length(repeat_times)` is `repeat_words`, gives the number of times each repeated word appears. If length 1, each repeated word appears that number of times. Otherwise, throws an error (see [rep()]).
 #' @param template character scalar, template for the (non-swapped) praise
 #'
 #' @export
 #'
 #' @examples drunk()
-#' @examples drunk(2, 3, "You are ${creating} a ${adverb} ${adjective} ${rpackage}")
+#' @examples drunk(2, 2:3)
+#' @examples drunk(2, 2, "You are ${creating} a ${adverb} ${adjective} ${rpackage}")
 #' 
 drunk <- function(repeat_words = 1, repeat_times = 2, template = "You are ${adverb} ${adjective}!") {
   praise <- praise::praise(template)

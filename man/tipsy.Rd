@@ -7,7 +7,7 @@
 tipsy(swaps = 1, template = "You are ${adverb} ${adjective}!")
 }
 \arguments{
-\item{swaps}{int, number of word swaps to make}
+\item{swaps}{int scalar, number of word swaps to make}
 
 \item{template}{character scalar, template for the (non-swapped) praise}
 }

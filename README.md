@@ -34,22 +34,27 @@ remotes::install_github("EllaKaye/aperol")
 ``` r
 library(aperol)
 tipsy()
-#> [1] "are You fortunately impressive!"
+#> [1] "effectively are You exclusive!"
 ```
 
 ``` r
 tipsy(2, "${Exclamation}! ${EXCLAMATION}!-${EXCLAMATION}! This is just ${adjective}!")
-#> [1] "Oh! just This YEE-HAW!-AMAZEBALLS! is unreal!"
+#> [1] "Whoa! HEH!-AH! This just nice! is"
 ```
 
 ``` r
 drunk()
-#> [1] "elegantly are elegantly dope! You"
+#> [1] "You warmly are fancy! You"
 ```
 
 ``` r
-drunk(2, 3, "You are ${creating} a ${adverb} ${adjective} ${rpackage}")
-#> [1] "program designing magnifique magnifique designing magnifique designing a are You rightfully"
+drunk(2, 2:3)
+#> [1] "are sharply sharply smashing! are You are"
+```
+
+``` r
+drunk(2, 2, "You are ${creating} a ${adverb} ${adjective} ${rpackage}")
+#> [1] "You clearly clearly fabulous are project a project devising"
 ```
 
 ## The hex

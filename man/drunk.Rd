@@ -11,9 +11,9 @@ drunk(
 )
 }
 \arguments{
-\item{repeat_words}{int, number of words that get repeated}
+\item{repeat_words}{int scalar, the number of words that get repeated}
 
-\item{repeat_times}{int, number of times to repeat the repeated words}
+\item{repeat_times}{an integer-valued (non-negative) vector. If \code{length(repeat_times)} is \code{repeat_words}, gives the number of times each repeated word appears. If length 1, each repeated word appears that number of times. Otherwise, throws an error (see \code{\link[=rep]{rep()}}).}
 
 \item{template}{character scalar, template for the (non-swapped) praise}
 }
@@ -22,6 +22,7 @@ Generates praise with \code{\link[praise:praise]{praise::praise()}}, then repeat
 }
 \examples{
 drunk()
-drunk(2, 3, "You are ${creating} a ${adverb} ${adjective} ${rpackage}")
+drunk(2, 2:3)
+drunk(2, 2, "You are ${creating} a ${adverb} ${adjective} ${rpackage}")
 
 }
