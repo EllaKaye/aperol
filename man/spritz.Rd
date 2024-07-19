@@ -8,7 +8,7 @@ spritz(
   runs = 3,
   minutes = 10,
   template = "You are ${adverb} ${adjective}!",
-  func = devtools::check()
+  func = "devtools::check()"
 )
 }
 \arguments{
@@ -18,7 +18,7 @@ spritz(
 
 \item{template}{Character. Praise template}
 
-\item{func}{Function. Something you expect to run multiple times}
+\item{func}{Character. A function you expect to run multiple times}
 }
 \value{
 Returns the output of func

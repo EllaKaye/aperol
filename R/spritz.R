@@ -8,7 +8,7 @@
 #' @param runs Numeric. Number of runs in time frame before praise
 #' @param minutes Numeric. Number of minutes in time frame
 #' @param template Character. Praise template
-#' @param func Function. Something you expect to run multiple times
+#' @param func Character. A function you expect to run multiple times
 #'
 #' @return Returns the output of func
 #' @export
@@ -25,18 +25,20 @@
 #'
 #'
 spritz <- function(runs = 3, minutes = 10, template = "You are ${adverb} ${adjective}!",
-                   func =  devtools::check()){
+                   func =  "devtools::check()"){
+
+  count_item <- data.frame(count = 1,time = as.numeric(Sys.time()),func = func)
 
   if(!exists("spritz_count")){
-    spritz_count<<- data.frame(count = 1,time = as.numeric(Sys.time()))
+    spritz_count<<-count_item
   } else {
-    spritz_count <<- rbind(spritz_count,data.frame(count = 1,time = as.numeric(Sys.time())))
+    spritz_count <<- rbind(spritz_count,count_item)
   }
 
   # fitler by time
   time_frame <- (as.numeric(Sys.time())-(minutes*60))
 
-  spritz_count_filtered  <- spritz_count[spritz_count$time >= time_frame, ]
+  spritz_count_filtered  <- spritz_count[spritz_count$time >= time_frame &spritz_count$func >= func, ]
   # check number of runs
 
    runs_in_time_frame <- sum(spritz_count_filtered$count)
@@ -59,5 +61,5 @@ spritz <- function(runs = 3, minutes = 10, template = "You are ${adverb} ${adjec
      print(drunk(template = template))
    }
 
-  func
+  eval(parse(text = func))
 }
