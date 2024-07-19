@@ -1,9 +1,7 @@
-"could be fun to have a thin wrapper around `devtools::check` and/or a function
-to run a gh actions that provides affirmation after X consecutive calls or
-X calls in Y minutes."
-
-
-#' Title
+#' Spritz
+#'
+#' A thin wrapper around a function (e.g devtools::check())
+#' that provides affirmation after X calls in Y minutes.
 #'
 #' @param runs Numeric. Number of runs in time frame before praise
 #' @param minutes Numeric. Number of minutes in time frame
