@@ -1,17 +1,29 @@
 #' Spritz
 #'
 #' A thin wrapper around a function (e.g devtools::check())
-#' that provides affirmation after X calls in Y minutes.
+#' that provides affirmation after X calls in Y minutes. Praise
+#' gets drunker as the number of actual runs exceeds the number of
+#' runs in the time frame.
 #'
 #' @param runs Numeric. Number of runs in time frame before praise
 #' @param minutes Numeric. Number of minutes in time frame
 #' @param template Character. Praise template
 #' @param func Function. Something you expect to run multiple times
 #'
-#' @return
+#' @return Returns the output of func
 #' @export
 #'
 #' @examples
+#' \dontrun{
+#'
+#' # default is to run devtools::check()
+#' spritz()
+#' ## change rate depending on speed of devtools::check()
+#' spritz(times = 3, minutes = 15)
+#'
+#' }
+#'
+#'
 spritz <- function(runs = 3, minutes = 10, template = "You are ${adverb} ${adjective}!",
                    func =  devtools::check()){
 
