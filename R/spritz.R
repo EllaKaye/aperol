@@ -19,7 +19,9 @@
 #' # default is to run devtools::check()
 #' spritz()
 #' ## change rate depending on speed of devtools::check()
-#' spritz(times = 3, minutes = 15)
+#' spritz(runs = 4, minutes = 15)
+#'
+#'
 #'
 #' }
 #'
@@ -43,6 +45,9 @@ spritz <- function(runs = 3, minutes = 10, template = "You are ${adverb} ${adjec
 
    runs_in_time_frame <- sum(spritz_count_filtered$count)
 
+   # run the function
+   eval(parse(text = func))
+
    # normal praise
   if(runs_in_time_frame == runs){
     praise <- praise::praise(template = template)
@@ -57,9 +62,12 @@ spritz <- function(runs = 3, minutes = 10, template = "You are ${adverb} ${adjec
    }
 
    # drunk praise
-   if(diff_runs >= 3){
-     print(drunk(template = template))
+   praise_length <- length(strsplit(template, " ")[[1]])
+   rep_n <- min(diff_runs - 2, praise_length)
+
+   if (diff_runs >= 3) {
+     print(drunk(repeat_words = rep_n, repeat_times = 2:(rep_n + 1), template = template))
    }
 
-  eval(parse(text = func))
+
 }

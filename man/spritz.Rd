@@ -35,7 +35,9 @@ runs in the time frame.
 # default is to run devtools::check()
 spritz()
 ## change rate depending on speed of devtools::check()
-spritz(times = 3, minutes = 15)
+spritz(runs = 4, minutes = 15)
+
+
 
 }
 
