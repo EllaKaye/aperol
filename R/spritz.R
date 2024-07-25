@@ -46,7 +46,7 @@ spritz <- function(runs = 3, minutes = 10, template = "You are ${adverb} ${adjec
   # fitler by time
   time_frame <- (as.numeric(Sys.time())-(minutes*60))
 
-  spritz_count_filtered  <- the$spritz_count[the$spritz_count$time >= time_frame & the$spritz_count$func >= func, ]
+  spritz_count_filtered  <- the$spritz_count[the$spritz_count$time >= time_frame & the$spritz_count$func == func, ]
   # check number of runs
 
    runs_in_time_frame <- sum(spritz_count_filtered$count)
@@ -54,14 +54,14 @@ spritz <- function(runs = 3, minutes = 10, template = "You are ${adverb} ${adjec
    # normal praise
   if(runs_in_time_frame == runs){
     praise <- praise::praise(template = template)
-    print(praise)
+    message(praise)
   }
 
    diff_runs  <- runs_in_time_frame - runs
 
    # tipsy praise
    if(diff_runs < 3 & diff_runs > 0 ){
-     print(tipsy(template = template))
+     message(tipsy(template = template))
    }
 
    # drunk praise
@@ -69,7 +69,7 @@ spritz <- function(runs = 3, minutes = 10, template = "You are ${adverb} ${adjec
    rep_n <- min(diff_runs - 2, praise_length)
 
    if (diff_runs >= 3) {
-     print(drunk(repeat_words = rep_n, repeat_times = 2:(rep_n + 1), template = template))
+     message(drunk(repeat_words = rep_n, repeat_times = 2:(rep_n + 1), template = template))
    }
 
    # increment the spritz count
