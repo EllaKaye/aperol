@@ -38,16 +38,13 @@ spritz()
 spritz(runs = 4, minutes = 15)
 
 ## custom function
-sleep_add <- function(){
+sleep_add <- function() {
   Sys.sleep(2)
-  out <- 1+1
+  out <- 1 + 1
   return(out)
 }
 
 spritz(func = "sleep_add()")
-
-
 }
-
 
 }

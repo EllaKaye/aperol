@@ -16,6 +16,6 @@ Invisible. Data frame for spritz_count
 Adds a row to the spritz count variable in the \code{the} environment
 }
 \examples{
- increment_spritz_count(func = "1+1")
+increment_spritz_count(func = "1+1")
 
 }
