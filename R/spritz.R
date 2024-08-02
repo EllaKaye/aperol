@@ -38,6 +38,23 @@ the$spritz_count <- data.frame(count = numeric(), time = numeric(), func = chara
 #'
 spritz <- function(runs = 3, minutes = 10, template = "You are ${adverb} ${adjective}!",
                    func = "devtools::check()") {
+  # check the arguments
+  if (!(is.character(func) && length(func) == 1)) {
+    stop("`func` must be a character string.")
+  }
+
+  if (!(is.character(template) && length(template) == 1)) {
+    stop("`template` must be a character string.")
+  }
+
+  if (!(is.numeric(runs) && length(runs) == 1)) {
+    stop("`runs` must be a single integer.")
+  }
+
+  if (!(is.numeric(minutes) && length(minutes) == 1)) {
+    stop("`minutes` must be a single integer.")
+  }
+
   # fitler by time
   time_frame <- (as.numeric(Sys.time()) - (minutes * 60))
 
