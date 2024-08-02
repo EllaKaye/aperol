@@ -1,9 +1,10 @@
 Package: aperol
 Title: Generates Tipsy or Drunk Praise
-Version: 0.1.0
+Version: 0.2.0
 Authors@R: c(
     person("Ella", "Kaye", , "ella.kaye@gmail.com", role = c("aut", "cre")),
-    person("Kelly", "Bodwin", role = "aut"))
+    person("Kelly", "Bodwin", role = "aut"),
+    person("Collin", "Schwantes", role = "aut"))
 Description: This is a joke package, which generates praise using the praise package, then garbles it, as if being delivered by someone tipsy or drunk.
 License: MIT + file LICENSE
 Encoding: UTF-8
@@ -16,6 +17,7 @@ Imports:
 Remotes: 
     rladies/praise
 Suggests: 
+    devtools,
     testthat (>= 3.0.0),
     withr
 Config/testthat/edition: 3
