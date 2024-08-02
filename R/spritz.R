@@ -63,6 +63,9 @@ spritz <- function(runs = 3, minutes = 10, template = "You are ${adverb} ${adjec
 
   runs_in_time_frame <- sum(spritz_count_filtered$count)
 
+  # run the function
+  eval(parse(text = func))
+
   # normal praise
   if (runs_in_time_frame == runs) {
     praise <- praise::praise(template = template)
@@ -86,11 +89,6 @@ spritz <- function(runs = 3, minutes = 10, template = "You are ${adverb} ${adjec
 
   # increment the spritz count
   increment_spritz_count(func)
-
-  # run the function
-  out <- eval(parse(text = func))
-
-  return(out)
 }
 
 
