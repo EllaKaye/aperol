@@ -19,6 +19,11 @@ Specifically, it generates some praise using the
 `aperol::tipsy()` swaps a subset of words, and `aperol::drunk()` mixes
 up the whole affirmation, repeating some words along the way.
 
+As of v0.2.0, there is an `aperol::spritz()` function, which is a
+wrapper to any other function (by default `devtools::check()`) which
+counts how many times you call it, and offers increasingly garbled
+praise, the more often you do so in a given time-frame.
+
 ## Installation
 
 You can install the development version of aperol from
@@ -34,27 +39,27 @@ remotes::install_github("EllaKaye/aperol")
 ``` r
 library(aperol)
 tipsy()
-#> [1] "You are hip! happily"
+#> [1] "You are awesome! gladly"
 ```
 
 ``` r
 tipsy(2, "${Exclamation}! ${EXCLAMATION}!-${EXCLAMATION}! This is just ${adjective}!")
-#> [1] "Wow! just This YEAHYAH!-OH! is clever!"
+#> [1] "Whee! MMHM!-YEAHYAH! is adorable! just This"
 ```
 
 ``` r
 drunk()
-#> [1] "repeatedly repeatedly You top-shelf! are"
+#> [1] "frankly are are superb! You"
 ```
 
 ``` r
 drunk(2, 2:3)
-#> [1] "You are You dandy! dandy! dandy! beautifully"
+#> [1] "You truthfully truthfully sterling! are are truthfully"
 ```
 
 ``` r
 drunk(2, 2, "You are ${creating} a ${adverb} ${adjective} ${rpackage}")
-#> [1] "You healthily code fantabulosus are planning a You a"
+#> [1] "R preparing seriously package badass are a preparing seriously You"
 ```
 
 ## The hex
