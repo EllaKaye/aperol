@@ -23,6 +23,8 @@ A joke package, based on [this](https://fosstodon.org/@kellybodwin/1127691863458
 
 **aperol** gives you praise, but as if from someone tipsy or drunk. Specifically, it generates some praise using the [praise](https://github.com/rladies/praise) package and garbles it. `aperol::tipsy()` swaps a subset of words, and `aperol::drunk()` mixes up the whole affirmation, repeating some words along the way.
 
+As of v0.2.0, there is an `aperol::spritz()` function, which is a wrapper to any other function (by default `devtools::check()`) which counts how many times you call it, and offers increasingly garbled praise, the more often you do so in a given time-frame.
+
 ## Installation
 
 You can install the development version of aperol from [GitHub](https://github.com/) with:

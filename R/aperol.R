@@ -1,5 +1,5 @@
 #' Tipsy Praise
-#' 
+#'
 #' Generates praise with [praise::praise()], then swaps some words.
 #'
 #' @param swaps int scalar, number of word swaps to make
@@ -9,7 +9,7 @@
 #'
 #' @examples tipsy()
 #' @examples tipsy(2, "You are ${creating} a ${adverb} ${adjective} ${rpackage}")
-#' 
+#'
 tipsy <- function(swaps = 1, template = "You are ${adverb} ${adjective}!") {
   praise <- praise::praise(template)
   praise_words <- strsplit(praise, " ")[[1]]
@@ -18,10 +18,10 @@ tipsy <- function(swaps = 1, template = "You are ${adverb} ${adjective}!") {
   if (swaps > n) swaps <- n
 
   swap_indicies <- sample(n, size = swaps + 1)
-  swapped_indices <- sample(swap_indicies) 
+  swapped_indices <- sample(swap_indicies)
 
   while (any(swap_indicies == swapped_indices)) {
-    swapped_indices <- sample(swap_indicies) 
+    swapped_indices <- sample(swap_indicies)
   }
 
   praise_words[swap_indicies] <- praise_words[swapped_indices]
@@ -30,7 +30,7 @@ tipsy <- function(swaps = 1, template = "You are ${adverb} ${adjective}!") {
 }
 
 #' Drunk Praise
-#' 
+#'
 #' Generates praise with [praise::praise()], then repeats some words, and permutes them all.
 #'
 #' @param repeat_words int scalar, the number of words that get repeated
@@ -42,7 +42,7 @@ tipsy <- function(swaps = 1, template = "You are ${adverb} ${adjective}!") {
 #' @examples drunk()
 #' @examples drunk(2, 2:3)
 #' @examples drunk(2, 2, "You are ${creating} a ${adverb} ${adjective} ${rpackage}")
-#' 
+#'
 drunk <- function(repeat_words = 1, repeat_times = 2, template = "You are ${adverb} ${adjective}!") {
   praise <- praise::praise(template)
   praise_words <- strsplit(praise, " ")[[1]]
