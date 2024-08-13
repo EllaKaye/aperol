@@ -23,7 +23,10 @@ the$spritz_count <- data.frame(count = numeric(), time = numeric(), func = chara
 #'
 #' # default is to run devtools::check()
 #' spritz()
-#' ## change rate depending on speed of devtools::check()
+#' # with a different function and praise template
+#' spritz("devtools::document()", 
+#'        template = "You are ${creating} a ${adverb} ${adjective} ${rpackage}")
+#' # change rate depending on speed of devtools::check()
 #' spritz(runs = 4, minutes = 15)
 #'
 #' ## custom function
@@ -36,8 +39,7 @@ the$spritz_count <- data.frame(count = numeric(), time = numeric(), func = chara
 #' spritz(func = "sleep_add()")
 #' }
 #'
-spritz <- function(runs = 3, minutes = 10, template = "You are ${adverb} ${adjective}!",
-                   func = "devtools::check()") {
+spritz <- function(func = "devtools::check()", runs = 3, minutes = 10, template = "You are ${adverb} ${adjective}!") {
   # check the arguments
   if (!(is.character(func) && length(func) == 1)) {
     stop("`func` must be a character string.")

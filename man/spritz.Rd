@@ -5,20 +5,20 @@
 \title{Spritz}
 \usage{
 spritz(
+  func = "devtools::check()",
   runs = 3,
   minutes = 10,
-  template = "You are ${adverb} ${adjective}!",
-  func = "devtools::check()"
+  template = "You are ${adverb} ${adjective}!"
 )
 }
 \arguments{
+\item{func}{Character. A function you expect to run multiple times}
+
 \item{runs}{Numeric. Number of runs in time frame before praise}
 
 \item{minutes}{Numeric. Number of minutes in time frame}
 
 \item{template}{Character. Praise template}
-
-\item{func}{Character. A function you expect to run multiple times}
 }
 \value{
 Returns the output of func
@@ -34,7 +34,10 @@ runs in the time frame.
 
 # default is to run devtools::check()
 spritz()
-## change rate depending on speed of devtools::check()
+# with a different function and praise template
+spritz("devtools::document()", 
+       template = "You are ${creating} a ${adverb} ${adjective} ${rpackage}")
+# change rate depending on speed of devtools::check()
 spritz(runs = 4, minutes = 15)
 
 ## custom function
