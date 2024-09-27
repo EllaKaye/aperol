@@ -3,3 +3,7 @@
 ^README\.Rmd$
 ^LICENSE\.md$
 ^aperol_hex\.png$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+^\.github$

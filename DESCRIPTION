@@ -10,7 +10,7 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2.9000
-URL: https://github.com/EllaKaye/aperol
+URL: https://github.com/EllaKaye/aperol, https://ellakaye.github.io/aperol/
 BugReports: https://github.com/EllaKaye/aperol/issues
 Imports: 
     praise (>= 1.0.0)
