@@ -3,7 +3,7 @@
 
 # aperol <img src="man/figures/logo.png" align="right" height="138" alt="" />
 
-A joke package, based on
+A silly package, based on
 [this](https://fosstodon.org/@kellybodwin/112769186345818866) mastodon
 thread, started by Kelly Bodwin and Shannon Pileggi, and specifically
 the replies by [Nick
